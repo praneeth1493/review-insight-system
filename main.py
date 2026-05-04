@@ -18,7 +18,8 @@ from src.aspects import classify_aspects
 from src.keywords import keyword_summary
 from src.insights import generate_full_report
 from src.evaluator import evaluate, print_evaluation_report
-from src.dashboard import build_app
+# dashboard not needed for API deployment
+# from src.dashboard import build_app
 
 
 def load_data(csv_path: str | None, n_samples: int = 300) -> pd.DataFrame:
@@ -102,13 +103,8 @@ def main():
     print("\nSaved: processed_reviews.csv, report.json")
 
     if not args.no_dashboard:
-        print(f"\nLaunching dashboard at http://localhost:{args.port} ...")
-        app = build_app(df, report, metrics)
-        # Dash 4.x uses app.run(), older versions use app.run_server()
-        try:
-            app.run(debug=False, port=args.port)
-        except TypeError:
-            app.run_server(debug=False, port=args.port)
+        print("Dashboard not available in API-only mode.")
+        print("Use the React frontend instead: npm run dev")
 
 
 if __name__ == "__main__":
