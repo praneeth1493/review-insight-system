@@ -2,8 +2,10 @@ services:
   - type: web
     name: review-insight-api
     env: python
-    buildCommand: pip install -r requirements.txt && python -c "import nltk; nltk.download('vader_lexicon'); nltk.download('stopwords'); nltk.download('wordnet'); nltk.download('punkt')" && python main.py --no-dashboard
-    startCommand: gunicorn api:app --bind 0.0.0.0:$PORT
+    region: oregon
+    plan: free
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: gunicorn api:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0

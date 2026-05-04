@@ -37,26 +37,6 @@ def _load():
     csv_path = os.path.join(base, "processed_reviews.csv")
     report_path = os.path.join(base, "report.json")
 
-    # Auto-generate data if not present (first deploy)
-    if not os.path.exists(csv_path) or not os.path.exists(report_path):
-        print("Data files not found — running pipeline to generate them...")
-        from data.sample_reviews import generate_dataset
-        from src.preprocessor import preprocess_dataframe
-        from src.sentiment_lite import add_sentiment
-        from src.aspects import classify_aspects
-        from src.insights import generate_full_report
-        import json as _json
-
-        df = generate_dataset(300)
-        df = preprocess_dataframe(df)
-        df = add_sentiment(df)
-        df = classify_aspects(df)
-        report = generate_full_report(df)
-        df.to_csv(csv_path, index=False)
-        with open(report_path, "w") as f:
-            _json.dump(report, f, indent=2, default=str)
-        print("Data generated successfully.")
-
     df = pd.read_csv(csv_path)
     df["tokens"] = df["tokens"].apply(ast.literal_eval)
     df["aspects"] = df["aspects"].apply(ast.literal_eval)

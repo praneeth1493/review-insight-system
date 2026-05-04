@@ -1,9 +1,8 @@
 import axios from 'axios'
 
-// Uses env variable in production, falls back to localhost in development
-const BASE = import.meta.env.VITE_API_URL
-  ? `${import.meta.env.VITE_API_URL}/api`
-  : 'http://localhost:5000/api'
+// In production (Vercel) API is on same domain /api
+// In development it proxies to localhost:5000
+const BASE = '/api'
 
 export const getSummary            = () => axios.get(`${BASE}/summary`).then(r => r.data)
 export const getSentimentDist      = () => axios.get(`${BASE}/sentiment-distribution`).then(r => r.data)
