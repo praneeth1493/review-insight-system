@@ -1,0 +1,9 @@
+import './Loader.css'
+export default function Loader() {
+  return (
+    <div className="loader-wrap">
+      <div className="spinner" />
+      <span className="loader-text">Loading data...</span>
+    </div>
+  )
+}

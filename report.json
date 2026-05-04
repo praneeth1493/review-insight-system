@@ -1,0 +1,325 @@
+{
+  "total_reviews": 300,
+  "sentiment_distribution": {
+    "positive": 129,
+    "neutral": 89,
+    "negative": 82
+  },
+  "average_confidence": 0.6513,
+  "recurring_problems": [
+    {
+      "aspect": "software",
+      "complaint_count": 28,
+      "severity": "high"
+    },
+    {
+      "aspect": "general",
+      "complaint_count": 17,
+      "severity": "high"
+    },
+    {
+      "aspect": "display",
+      "complaint_count": 13,
+      "severity": "medium"
+    },
+    {
+      "aspect": "value",
+      "complaint_count": 10,
+      "severity": "medium"
+    },
+    {
+      "aspect": "connectivity",
+      "complaint_count": 9,
+      "severity": "medium"
+    },
+    {
+      "aspect": "camera",
+      "complaint_count": 9,
+      "severity": "medium"
+    },
+    {
+      "aspect": "design",
+      "complaint_count": 9,
+      "severity": "medium"
+    },
+    {
+      "aspect": "build_quality",
+      "complaint_count": 8,
+      "severity": "low"
+    },
+    {
+      "aspect": "delivery",
+      "complaint_count": 8,
+      "severity": "low"
+    },
+    {
+      "aspect": "customer_service",
+      "complaint_count": 7,
+      "severity": "low"
+    },
+    {
+      "aspect": "battery",
+      "complaint_count": 5,
+      "severity": "low"
+    },
+    {
+      "aspect": "performance",
+      "complaint_count": 4,
+      "severity": "low"
+    }
+  ],
+  "positive_features": [
+    {
+      "aspect": "software",
+      "praise_count": 37
+    },
+    {
+      "aspect": "build_quality",
+      "praise_count": 33
+    },
+    {
+      "aspect": "audio",
+      "praise_count": 27
+    },
+    {
+      "aspect": "value",
+      "praise_count": 26
+    },
+    {
+      "aspect": "design",
+      "praise_count": 23
+    },
+    {
+      "aspect": "performance",
+      "praise_count": 22
+    },
+    {
+      "aspect": "customer_service",
+      "praise_count": 21
+    },
+    {
+      "aspect": "display",
+      "praise_count": 14
+    },
+    {
+      "aspect": "battery",
+      "praise_count": 13
+    },
+    {
+      "aspect": "general",
+      "praise_count": 8
+    },
+    {
+      "aspect": "delivery",
+      "praise_count": 6
+    },
+    {
+      "aspect": "camera",
+      "praise_count": 5
+    }
+  ],
+  "recommendations": [
+    {
+      "aspect": "software",
+      "severity": "high",
+      "negative_count": 9,
+      "positive_count": 11,
+      "recommendation": "Prioritize bug fixes and stability improvements in the next software release.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "build_quality",
+      "severity": "low",
+      "negative_count": 8,
+      "positive_count": 35,
+      "recommendation": "Review materials and manufacturing QC to reduce fragility and defect rates.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "performance",
+      "severity": "low",
+      "negative_count": 0,
+      "positive_count": 21,
+      "recommendation": "Optimize software and reduce background processes to improve device speed and stability.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "design",
+      "severity": "medium",
+      "negative_count": 10,
+      "positive_count": 14,
+      "recommendation": "Conduct ergonomic review and consider design improvements based on user feedback.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "display",
+      "severity": "medium",
+      "negative_count": 13,
+      "positive_count": 8,
+      "recommendation": "Address touchscreen responsiveness issues and improve display calibration.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "customer_service",
+      "severity": "low",
+      "negative_count": 10,
+      "positive_count": 8,
+      "recommendation": "Invest in customer support training and streamline the warranty/return process.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "value",
+      "severity": "medium",
+      "negative_count": 0,
+      "positive_count": 21,
+      "recommendation": "Reassess pricing strategy or enhance feature set to better match customer expectations.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "battery",
+      "severity": "low",
+      "negative_count": 8,
+      "positive_count": 18,
+      "recommendation": "Improve battery capacity or optimize power management firmware to extend usage time.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "connectivity",
+      "severity": "medium",
+      "negative_count": 9,
+      "positive_count": 0,
+      "recommendation": "Investigate and fix Bluetooth/WiFi driver issues causing frequent disconnections.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "general",
+      "severity": "high",
+      "negative_count": 0,
+      "positive_count": 0,
+      "recommendation": "Conduct a comprehensive product review based on customer feedback patterns.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "camera",
+      "severity": "medium",
+      "negative_count": 5,
+      "positive_count": 5,
+      "recommendation": "Enhance camera software algorithms and low-light performance through firmware updates.",
+      "related_keywords": "screen, normal, device"
+    },
+    {
+      "aspect": "delivery",
+      "severity": "low",
+      "negative_count": 5,
+      "positive_count": 6,
+      "recommendation": "Improve packaging standards and partner with more reliable shipping carriers.",
+      "related_keywords": "screen, normal, device"
+    }
+  ],
+  "aspect_summary": [
+    {
+      "aspect": "software",
+      "negative": 9.0,
+      "neutral": 84.0,
+      "positive": 11.0,
+      "total": 104.0,
+      "sentiment_score": 0.019
+    },
+    {
+      "aspect": "build_quality",
+      "negative": 8.0,
+      "neutral": 5.0,
+      "positive": 35.0,
+      "total": 48.0,
+      "sentiment_score": 0.562
+    },
+    {
+      "aspect": "performance",
+      "negative": 0.0,
+      "neutral": 23.0,
+      "positive": 21.0,
+      "total": 44.0,
+      "sentiment_score": 0.477
+    },
+    {
+      "aspect": "design",
+      "negative": 10.0,
+      "neutral": 18.0,
+      "positive": 14.0,
+      "total": 42.0,
+      "sentiment_score": 0.095
+    },
+    {
+      "aspect": "audio",
+      "negative": 3.0,
+      "neutral": 13.0,
+      "positive": 22.0,
+      "total": 38.0,
+      "sentiment_score": 0.5
+    },
+    {
+      "aspect": "display",
+      "negative": 13.0,
+      "neutral": 16.0,
+      "positive": 8.0,
+      "total": 37.0,
+      "sentiment_score": -0.135
+    },
+    {
+      "aspect": "customer_service",
+      "negative": 10.0,
+      "neutral": 18.0,
+      "positive": 8.0,
+      "total": 36.0,
+      "sentiment_score": -0.056
+    },
+    {
+      "aspect": "value",
+      "negative": 0.0,
+      "neutral": 15.0,
+      "positive": 21.0,
+      "total": 36.0,
+      "sentiment_score": 0.583
+    },
+    {
+      "aspect": "battery",
+      "negative": 8.0,
+      "neutral": 5.0,
+      "positive": 18.0,
+      "total": 31.0,
+      "sentiment_score": 0.323
+    },
+    {
+      "aspect": "connectivity",
+      "negative": 9.0,
+      "neutral": 20.0,
+      "positive": 0.0,
+      "total": 29.0,
+      "sentiment_score": -0.31
+    },
+    {
+      "aspect": "general",
+      "negative": 0.0,
+      "neutral": 25.0,
+      "positive": 0.0,
+      "total": 25.0,
+      "sentiment_score": 0.0
+    },
+    {
+      "aspect": "camera",
+      "negative": 5.0,
+      "neutral": 4.0,
+      "positive": 5.0,
+      "total": 14.0,
+      "sentiment_score": 0.0
+    },
+    {
+      "aspect": "delivery",
+      "negative": 5.0,
+      "neutral": 3.0,
+      "positive": 6.0,
+      "total": 14.0,
+      "sentiment_score": 0.071
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+.dashboard { display: flex; flex-direction: column; gap: 28px; }
+
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 900px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.charts-row { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; }
+@media (max-width: 900px) { .charts-row { grid-template-columns: 1fr; } }
+
+.sentiment-stats { display: flex; flex-direction: column; gap: 18px; padding: 8px 0; }
+.stat-row { display: flex; align-items: center; gap: 12px; }
+.stat-label { width: 68px; font-size: 12px; color: var(--text2); font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; }
+.stat-bar-wrap {
+  flex: 1; height: 8px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px; overflow: hidden;
+}
+.stat-bar { height: 100%; border-radius: 4px; transition: width 0.8s cubic-bezier(0.4,0,0.2,1); }
+.stat-pct { width: 44px; text-align: right; font-size: 13px; font-weight: 700; }
+
+.recs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 1100px) { .recs-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .recs-grid { grid-template-columns: 1fr; } }
+
+.rec-card {
+  background: linear-gradient(135deg, rgba(19,24,48,0.8), rgba(26,32,64,0.8));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.rec-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139,92,246,0.4), transparent);
+}
+
+.rec-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.rec-header { display: flex; justify-content: space-between; align-items: center; }
+.rec-aspect {
+  font-size: 10px; font-weight: 800;
+  color: var(--accent2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(139,92,246,0.12);
+  border: 1px solid rgba(139,92,246,0.25);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.rec-text { font-size: 13px; color: var(--text); line-height: 1.6; }
+.rec-stats { display: flex; gap: 14px; font-size: 12px; margin-top: 4px; }
+.neg-stat { color: var(--negative); font-weight: 600; }
+.pos-stat { color: var(--positive); font-weight: 600; }
