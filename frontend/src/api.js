@@ -1,6 +1,9 @@
 import axios from 'axios'
 
-const BASE = 'http://localhost:5000/api'
+// Uses env variable in production, falls back to localhost in development
+const BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : 'http://localhost:5000/api'
 
 export const getSummary            = () => axios.get(`${BASE}/summary`).then(r => r.data)
 export const getSentimentDist      = () => axios.get(`${BASE}/sentiment-distribution`).then(r => r.data)
