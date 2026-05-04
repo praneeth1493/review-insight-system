@@ -50,6 +50,26 @@ def _load():
 DF, REPORT = _load()
 
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "status": "running",
+        "message": "ReviewIQ API is live!",
+        "endpoints": [
+            "/api/summary",
+            "/api/sentiment-distribution",
+            "/api/aspect-summary",
+            "/api/problems",
+            "/api/positive-features",
+            "/api/recommendations",
+            "/api/keywords",
+            "/api/reviews",
+            "/api/metrics",
+            "/api/analyze"
+        ]
+    })
+
+
 # ── Endpoints ────────────────────────────────────────────────────────────────
 @app.route("/api/summary", methods=["GET"])
 def summary():
